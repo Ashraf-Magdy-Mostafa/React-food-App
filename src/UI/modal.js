@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./modal.css";
-const BackDrop = () => {
-  return <div className="backdrop" />;
+const BackDrop = (props) => {
+  return <div className="backdrop" onClick={props.hide}></div>;
 };
 const ModelOverLay = (props) => {
   return <div className="modal">{props.children}</div>;
@@ -23,7 +23,7 @@ const Modal = (props) => {
   // );
   return (
     <React.Fragment>
-      <BackDrop />
+      <BackDrop hide={props.hide} />
       <ModelOverLay>{props.children}</ModelOverLay>
     </React.Fragment>
   );
