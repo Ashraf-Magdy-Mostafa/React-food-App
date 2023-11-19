@@ -1,3 +1,4 @@
+import CartProvider from "./Store/CartProvider";
 import Cart from "./Cart/Cart";
 import Header from "./Layout/Header";
 import Meals from "./Meals/Meals";
@@ -12,13 +13,13 @@ function App() {
     setCart(false);
   };
   return (
-    <div>
+    <CartProvider>
       {cart && <Cart hide={hideCart} />}
       <Header onClick={showCart} />
       <main>
         <Meals />
       </main>
-    </div>
+    </CartProvider>
   );
 }
 
