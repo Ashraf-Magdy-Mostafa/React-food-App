@@ -27,6 +27,7 @@ const DUMMY_MEALS = [
     price: 18.99,
   },
 ];
+//displaying main menu items using Dummy_Data
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem

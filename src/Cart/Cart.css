@@ -5,7 +5,12 @@
   max-height: 20rem;
   overflow: auto;
 }
-
+.Tamount {
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
 .total {
   display: flex;
   justify-content: space-between;

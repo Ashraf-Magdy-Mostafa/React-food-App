@@ -5,6 +5,7 @@ import { useRef } from "react";
 const MealItemForm = (props) => {
   const inputRef = useRef();
   const submitHandler = (event) => {
+    // console.log(inputRef.current.value);
     event.preventDefault();
     const enteredAmount = inputRef.current.value;
     const enteredAmountNumber = +enteredAmount;

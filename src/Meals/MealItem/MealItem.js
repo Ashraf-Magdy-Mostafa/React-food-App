@@ -5,11 +5,13 @@ import CartContext from "../../Store/Cart-Context";
 const MealItem = (props) => {
   const price = `$${props.price}`;
   const ctx = useContext(CartContext);
-  const addToCartHandler = (amount) => {
+  // getting data via Props from AvailableMeals.js
+  const addToCartHandler = (enteredAmount) => {
     ctx.addItem({
+      key: props.id,
       id: props.id,
       name: props.name,
-      amount: amount,
+      amount: enteredAmount,
       price: props.price,
     });
   };
