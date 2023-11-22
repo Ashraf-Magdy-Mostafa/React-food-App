@@ -10,7 +10,7 @@
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
-  animation: bump 1000ms ease-out;
+  animation: bump 1000ms ease;
 }
 
 .button:hover,
@@ -38,7 +38,7 @@
 }
 
 .bump {
-  animation: bump 1000ms ease-out;
+  animation: bump 5000ms ease;
 }
 
 @keyframes bump {

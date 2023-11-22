@@ -9,7 +9,7 @@ const HeaderCartButton = (props) => {
   }, 0);
   return (
     <button className="button" onClick={props.show}>
-      <span className="icon">
+      <span className="icorrn">
         <CartIcon />
       </span>
       <span>Your Cart</span>
