@@ -14,11 +14,12 @@ const Cart = (props) => {
         const decreaseItem = (id) => {
           ctx.removeItem(id);
         };
+        const Num = Math.random();
         return (
-          <div>
+          <React.Fragment>
             <CartItem
+              key={Num}
               hide={props.hide}
-              key={item.id}
               id={item.id}
               name={item.name}
               price={item.price}
@@ -26,7 +27,7 @@ const Cart = (props) => {
               onAdd={itemPlus.bind(null, item)}
               onRemove={decreaseItem.bind(null, item.id)}
             />
-          </div>
+          </React.Fragment>
         );
       })}
     </ul>

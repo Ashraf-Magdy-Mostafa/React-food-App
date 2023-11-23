@@ -1,6 +1,8 @@
 import Card from "../UI/Card";
 import "./AvailableMeals.css";
+import { v4 as uuidv4 } from "uuid";
 import MealItem from "./MealItem/MealItem";
+import { useEffect } from "react";
 const DUMMY_MEALS = [
   {
     id: "m1",
@@ -27,12 +29,13 @@ const DUMMY_MEALS = [
     price: 18.99,
   },
 ];
+let Num = Math.random();
 //displaying main menu items using Dummy_Data
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
       id={meal.id}
-      key={meal.id}
+      key={uuidv4()}
       description={meal.description}
       price={meal.price}
       name={meal.name}

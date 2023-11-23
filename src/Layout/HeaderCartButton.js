@@ -26,10 +26,10 @@ const HeaderCartButton = (props) => {
       className={` button ${animateButton ? "bump" : ""}`}
       onClick={props.show}
     >
-      <span className="icorrn">
+      <span className="icon">
         <CartIcon />
       </span>
-      <span>Your Cart</span>
+      <span> Cart</span>
 
       <span className="badge">{cartItems}</span>
     </button>
