@@ -1,0 +1,20 @@
+.input {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.input input {
+  width: 45px;
+  height: 25px;
+  outline: none;
+  /* border: none; */
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.input label {
+  font-weight: bold;
+}
